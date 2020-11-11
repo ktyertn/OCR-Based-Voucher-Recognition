@@ -1,1 +1,1 @@
-# OCR-Based-Voucher-Recognition
+# OcrBasedVoucherRecognition

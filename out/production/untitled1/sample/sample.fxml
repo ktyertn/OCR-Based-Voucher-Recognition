@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="717.0" prefWidth="1114.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="btn1" layoutX="413.0" layoutY="183.0" mnemonicParsing="false" onAction="#pressButton" prefHeight="31.0" prefWidth="102.0" text="Load Image" textAlignment="CENTER" />
+      <ImageView fx:id="imageView" fitHeight="400.0" fitWidth="297.0" layoutX="47.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="table" layoutX="27.0" layoutY="424.0" prefHeight="200.0" prefWidth="753.0">
+        <columns>
+          <TableColumn fx:id="columnName" prefWidth="111.0" text="İsletme Adı" />
+          <TableColumn fx:id="columnTarih" minWidth="6.0" prefWidth="82.0" text="Tarih" />
+            <TableColumn fx:id="columnUrun" prefWidth="198.0" text="Ürün" />
+            <TableColumn fx:id="columnUrunkdv" prefWidth="96.0" text="Ürün KDV" />
+            <TableColumn fx:id="columnUrunfiyat" prefWidth="101.0" text="Ürün Fiyat" />
+            <TableColumn fx:id="columnFiyat" prefWidth="84.0" text="Fiyat" />
+            <TableColumn fx:id="columnFis" text="Fis No" />
+        </columns>
+      </TableView>
+      <TextField fx:id="textBox" layoutX="806.0" layoutY="464.0" prefHeight="31.0" prefWidth="136.0" />
+      <Button layoutX="956.0" layoutY="464.0" mnemonicParsing="false" onAction="#loadDatafromDatabase" prefHeight="31.0" prefWidth="102.0" text="Search" />
+      <ComboBox fx:id="comboBox" layoutX="896.0" layoutY="419.0" prefHeight="31.0" prefWidth="162.0" promptText="Select" />
+      <Label layoutX="806.0" layoutY="424.0" prefHeight="21.0" prefWidth="83.0" text="Filter :" />
+      <Label layoutX="710.0" layoutY="38.0" prefHeight="21.0" prefWidth="83.0" text="İşletme Adı:" />
+      <Label layoutX="709.0" layoutY="77.0" prefHeight="21.0" prefWidth="48.0" text="Tarih:" />
+      <Label layoutX="706.0" layoutY="120.0" text="Ürünler:" />
+      <Label layoutX="708.0" layoutY="274.0" text="Toplam Fiyat:" />
+      <Label layoutX="710.0" layoutY="313.0" text="Fiş No:" />
+      <TextField fx:id="isletmeAditext" layoutX="806.0" layoutY="33.0" prefHeight="31.0" prefWidth="265.0" />
+      <TextField fx:id="tarihText" layoutX="806.0" layoutY="72.0" prefHeight="31.0" prefWidth="265.0" />
+      <TextField fx:id="fiyatText" layoutX="806.0" layoutY="269.0" prefHeight="31.0" prefWidth="265.0" />
+      <TextField fx:id="fisText" layoutX="806.0" layoutY="308.0" prefHeight="31.0" prefWidth="265.0" />
+      <TextArea fx:id="urunlerText" layoutX="806.0" layoutY="111.0" prefHeight="144.0" prefWidth="265.0" />
+   </children>
+</AnchorPane>
